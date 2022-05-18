@@ -4,17 +4,17 @@ import { Container, Form, Button } from "react-bootstrap";
 
 import { v4 as uuidv4 } from "uuid";
 
-function Login(prop: { onIdSubmit: (arg0: string) => void }) {
-  const idRef = useRef() as React.MutableRefObject<HTMLInputElement>;
+function Login({ onIdSubmit }) {
+  const idRef = useRef();
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    prop.onIdSubmit(idRef.current.value);
+    onIdSubmit(idRef.current.value);
   };
 
   function createNewId() {
-    prop.onIdSubmit(uuidv4());
+    onIdSubmit(uuidv4());
   }
 
   return (

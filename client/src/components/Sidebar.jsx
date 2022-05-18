@@ -10,10 +10,10 @@ import NewContactModal from "./NewContactModel";
 const CONVERSATION_KEY = "conversation";
 const CONTACTS_KEY = "contacts";
 
-function Sidebar({ id }: any) {
+function Sidebar({ id }) {
   const [modalOpen, setModelOpen] = useState(false);
 
-  const [activeKey, setActiveKey] = useState(CONVERSATION_KEY as any);
+  const [activeKey, setActiveKey] = useState(CONVERSATION_KEY);
   const conversationOpen = activeKey === CONVERSATION_KEY;
 
   const closeModal = () => {

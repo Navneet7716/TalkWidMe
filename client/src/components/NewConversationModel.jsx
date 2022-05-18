@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NewConversationModel( {closeModal} : any ) {
+function NewConversationModel( {closeModal} ) {
   return (
     <div>NewConversationModel</div>
   )

@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 
-function NewContactModel({ closeModal }: any) {
-  const idRef = useRef() as React.MutableRefObject<HTMLInputElement>;
-  const nameRef = useRef() as React.MutableRefObject<HTMLInputElement>;
+function NewContactModel({ closeModal }) {
+  const idRef = useRef()
+  const nameRef = useRef()
 
-  function handleSubmit(e: any) {
+  function handleSubmit(e) {
     e.preventDefault();
 
     // createContact(idRef.current.value, nameRef.current.value);
